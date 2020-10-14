@@ -20,11 +20,7 @@ public class MunicipioController {
     private MunicipioRepository municipioRepository;
 
     @GetMapping("/municipios")
-//    @GetMapping(value = "/capa-without-geometry", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Municipio> getMunicipios(@RequestParam(value="idestado") Long idestado){
-
-    //public Page<Municipio> getMunicipios(Pageable pageable) {
-        //return municipioRepository.findAll(pageable);
         return municipioRepository.findMunicipiosByEstado(idestado);
     }
   

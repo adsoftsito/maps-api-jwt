@@ -20,7 +20,6 @@ public class EmpresaController {
     private EmpresaRepository empresaRepository;
 
     @GetMapping("/empresas")
-    //public Page<Empresa> getEmpresas(Pageable pageable) {
     public List<Empresa> getEmpresas(
             @RequestParam(value="idestado") Long idestado,
             @RequestParam(value="idmunicipio") Long idmunicipio,
