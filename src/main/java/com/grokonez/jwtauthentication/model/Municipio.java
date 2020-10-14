@@ -22,29 +22,28 @@ import org.hibernate.annotations.NaturalId;
 
 
 @Entity
-@Table(name = "estados", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {
-            "idestado"
-        })
-       
+@Table(name = "municipios", uniqueConstraints = {
+        
 })
-public class Estado{
+public class Municipio{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long idestado;
+    private Long idmunicipio;
 
     @NotBlank
-    @Size(min=3, max = 50)
-    private String estado;
+    @Size(min=3, max = 100)
+    private String municipio;
 
    
-    public Estado() {}
+    public Municipio() {}
 
-    public Estado(Long idestado, String estado) {
+    public Municipio(Long idestado, Long idmunicipio, String municipio) {
         this.idestado = idestado;
-        this.estado = estado;
+        this.idmunicipio = idmunicipio;
+        this.municipio = municipio;
     }
 
     public Long getId() {
@@ -55,14 +54,6 @@ public class Estado{
         this.id = id;
     }
 
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }   
-
     public Long getIdestado() {
         return idestado;
     }
@@ -70,6 +61,23 @@ public class Estado{
     public void setIdestado(Long idestado) {
         this.idestado = idestado;
     }
+
+    public Long getIdmunicipio() {
+        return idmunicipio;
+    }
+
+    public void setIdmunicipio(Long idmunicipio) {
+        this.idmunicipio = idmunicipio;
+    }
+
+    public String getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(String municipio) {
+        this.municipio = municipio;
+    }   
+
 
    
 }
