@@ -21,6 +21,7 @@ com/grokonez/jwtauthentication/repository/CategoriaRepository.class
 com/grokonez/jwtauthentication/security/WebSecurityConfig.class
 com/grokonez/jwtauthentication/security/jwt/JwtProvider.class
 com/grokonez/jwtauthentication/controller/EstadoController.class
+com/grokonez/jwtauthentication/controller/HomeController.class
 com/grokonez/jwtauthentication/repository/EstadoRepository.class
 com/grokonez/jwtauthentication/message/response/JwtResponse.class
 com/grokonez/jwtauthentication/security/jwt/JwtAuthEntryPoint.class

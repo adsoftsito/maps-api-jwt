@@ -1,5 +1,6 @@
 /Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java
 /Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/model/Categoria.java
+/Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/controller/HomeController.java
 /Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java
 /Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/repository/EmpresaRepository.java
 /Users/m/Desktop/maps-rest-api/maps-api-jwt/src/main/java/com/grokonez/jwtauthentication/model/Empresa.java
